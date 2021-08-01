@@ -22,6 +22,7 @@
 // DevID: 0x56/0x57 are samples of BMP280; 0x58 is mass production BMP280; 0x60 is BME280
 #define BME280_REG_DEVID                           (0xD0) /* Chip ID Register */
 #define BME280_REG_RESET                           (0xE0) /* Softreset Register */
+#define BME280_REG_CTRL_HUM                        (0xF2) /* Humidity oversampling */
 #define BME280_REG_STATUS                          (0xF3) /* Status Register */
 #define BME280_REG_CTRL_MEAS                       (0xF4) /* Ctrl Measure Register */
 #define BME280_REG_CONFIG                          (0xF5) /* Configuration Register */
@@ -38,6 +39,7 @@
 #define BME280_MODE_NORMAL                         (0x03)
 
 #define BME280_REG_TEMPERATURE_CALIB_DIG_T1_LSB    (0x88)
+#define BME280_REG_HUMIDITY_CALIB_ADDR             (0xE1)
 
 #define BME280_OVERSAMP_SKIPPED                    (0x00)
 #define BME280_OVERSAMP_1X                         (0x01)
